@@ -1,164 +1,501 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Karan Mehra</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9f7">
+  <meta name="description" content="Karan Mehra — Senior iOS Developer specializing in Swift, SwiftUI, UIKit, Objective-C, BLE, HealthKit, iOS architecture and App Store delivery.">
+  <title>Karan Mehra · Senior iOS Developer</title>
+  <style id="portfolio-styles">
+
+:root { color-scheme: light; --bg:#f8f9f7; --surface:#fff; --ink:#1d2725; --sub:#596661; --line:#dce3dd; --green:#285b4c; --pale:#eef3ee; }
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:95px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,input:focus-visible{outline:3px solid #3f977e;outline-offset:3px}
+.container{width:min(1100px,calc(100% - 56px));margin:0 auto}
+.skip-link{position:absolute;left:20px;top:-80px;z-index:50;background:white;padding:10px 16px}
+.skip-link:focus{top:10px}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(248,249,247,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;gap:11px;align-items:center;font-size:14px;font-weight:750;white-space:nowrap}
+.monogram{display:grid;place-items:center;background:var(--green);color:#fff;width:37px;height:37px;font-size:13px;letter-spacing:-.05em;border-radius:9px}
+.nav-links{display:flex;gap:29px;align-items:center;font-size:13px;font-weight:600;color:#53615b}
+.nav-links a:hover,.small-social a:hover,footer a:hover,.email:hover{color:var(--green);text-decoration:underline;text-underline-offset:4px}
+.nav-cta{padding:10px 13px;border:1px solid #bdccc3;border-radius:7px;font-size:12px;font-weight:700;white-space:nowrap}
+.nav-cta:hover{background:var(--pale)}
+.hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(280px,.7fr);gap:80px;align-items:center;padding:112px 0 102px}
+.overline,.section-marker{font-size:11px;color:var(--green);font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.overline{display:flex;gap:10px;align-items:center}
+.status-dot{width:7px;height:7px;background:#379e7b;border-radius:50%;display:inline-block}
+h1,h2,h3,h4,p{margin-top:0}
+h1,h2,h3{letter-spacing:-.045em;line-height:1.15}
+h1{font-size:clamp(43px,5.7vw,76px);margin:22px 0 24px;font-weight:780}
+h1 em{font-style:normal;color:var(--green)}
+.intro{max-width:610px;font-size:17px;line-height:1.85;color:var(--sub);margin-bottom:27px}
+.actions{display:flex;flex-wrap:wrap;gap:11px}
+.button{display:inline-flex;justify-content:center;align-items:center;gap:18px;padding:14px 19px;border-radius:8px;font-size:13px;font-weight:750;border:1px solid var(--green);min-height:48px}
+.button:hover{transform:translateY(-1px)}
+.button.solid{background:var(--green);color:#fff}
+.button.solid:hover{background:#1d493c}
+.button.outline{color:var(--green);background:transparent}
+.button.outline:hover{background:var(--pale)}
+.small-social{margin:25px 0 0;display:flex;gap:12px;align-items:center;color:var(--sub);font-size:13px}
+.hero-note{background:white;border:1px solid #dbe5dd;border-radius:9px;padding:30px 29px;box-shadow:0 14px 44px rgba(32,55,44,.035)}
+.note-rule{height:3px;width:39px;background:#487e69;margin-bottom:25px}
+.note-label{font-size:10px;color:var(--green);font-weight:800;letter-spacing:.13em}
+.hero-note p{font-size:13px;line-height:1.6;color:var(--sub);border-bottom:1px solid var(--line);padding:18px 0;margin:0}
+.hero-note strong{font-size:14px;color:var(--ink);font-weight:750}
+.note-footer{margin-top:22px;font-size:11px;color:var(--green);font-weight:700}
+.section{padding:88px 0;border-top:1px solid var(--line)}
+.two-col{display:grid;grid-template-columns: .9fr 1.1fr;gap:70px}
+h2{font-size:clamp(31px,4vw,46px);margin:15px 0 0;font-weight:770}
+.prose p{font-size:15px;color:var(--sub);line-height:1.9;margin-bottom:16px}
+.facts{display:flex;flex-wrap:wrap;gap:24px;margin-top:24px;padding-top:21px;border-top:1px solid var(--line);color:var(--sub);font-size:13px}
+.facts strong{color:var(--ink)}
+.compact-section{padding:77px 0}
+.section-heading{display:flex;justify-content:space-between;gap:45px;align-items:end;margin-bottom:34px}
+.section-heading>p{color:var(--sub);font-size:13px;max-width:345px;margin:0}
+.experience-list{border-top:1px solid var(--line)}
+.experience-item{display:grid;grid-template-columns:210px 1fr;gap:24px;padding:27px 0;border-bottom:1px solid var(--line)}
+.date{font-size:12px;color:var(--green);font-weight:750;padding-top:3px}
+.experience-item h3{font-size:21px;margin:0 0 4px}
+.company{font-weight:700;color:var(--green);font-size:13px;margin:0 0 10px}
+.experience-item p:last-child{font-size:14px;line-height:1.8;color:var(--sub);max-width:760px;margin-bottom:0}
+.skills-section{background:var(--pale)}
+.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:19px 56px}
+.skill-grid>div{border-top:1px solid #cddbd1;padding:19px 0}
+.skill-grid h3{font-size:15px;margin:0 0 9px}
+.skill-grid p{color:var(--sub);font-size:14px;line-height:1.8;margin:0}
+.projects-heading{margin-bottom:35px}
+.featured-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.featured{background:white;border:1px solid var(--line);border-radius:9px;padding:26px;display:flex;flex-direction:column}
+.featured-top{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:23px}
+.feature-type{font-size:10px;letter-spacing:.095em;color:var(--green);font-weight:800}
+.feature-number{font-size:11px;color:#97a49a}
+.featured h3{font-size:24px;margin:0 0 11px}
+.featured>p{color:var(--sub);line-height:1.8;font-size:13.5px;margin-bottom:25px;flex:1}
+.feature-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:16px}
+.feature-footer>span{color:var(--sub);font-size:11px}
+.feature-footer a{font-weight:750;color:var(--green);font-size:12px;white-space:nowrap}
+.feature-footer a:hover,.project-link:hover{text-decoration:underline;text-underline-offset:3px}
+.directory-head{margin-top:78px;display:flex;align-items:end;justify-content:space-between;gap:30px;padding-bottom:23px}
+.directory-head h3{font-size:28px;margin:0 0 10px}
+.directory-head p{color:var(--sub);font-size:13px;max-width:690px;margin:0}
+.search-wrap{min-width:205px}
+.search-wrap input{appearance:none;font:inherit;font-size:13px;padding:11px 13px;border:1px solid #bbcabe;background:white;border-radius:7px;width:100%;color:var(--ink)}
+.sr-only{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden;white-space:nowrap}
+.project-group{margin-bottom:35px}
+.project-group h4{display:flex;align-items:center;gap:10px;font-size:13px;letter-spacing:.02em;margin:0 0 10px;color:var(--green)}
+.count{font-size:11px;border:1px solid #b8c7bc;border-radius:20px;padding:1px 8px;color:var(--sub)}
+.project-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;border-top:1px solid var(--line)}
+.project-row{display:flex;align-items:center;justify-content:space-between;gap:13px;padding:17px 0;border-bottom:1px solid var(--line);min-width:0}
+.project-row[hidden],.project-group[hidden]{display:none}
+.project-info{min-width:0;display:grid;gap:4px}
+.project-name{font-size:13px;font-weight:750}
+.project-description{color:var(--sub);font-size:11.5px;line-height:1.55}
+.project-tech{color:#506f61}
+.dot-separator{margin:0 3px}
+.project-link{flex-shrink:0;color:var(--green);font-size:11.5px;font-weight:750}
+.project-unlinked{font-size:11px;color:#7c8880;white-space:nowrap}
+.search-status{font-size:12px;color:var(--sub)}
+.learning-section{background:var(--pale);padding:71px 0}
+.education-items p{padding:12px 0;margin:0 0 7px;color:var(--sub);font-size:14px}
+.education-items strong{color:var(--ink)}
+.contact-section{background:#e7eee9}
+.contact-inner{display:flex;align-items:end;justify-content:space-between;gap:65px}
+.contact-inner h2{margin-bottom:22px}
+.contact-inner p:not(.section-marker){max-width:640px;color:var(--sub);font-size:15px;margin-bottom:0}
+.contact-actions{min-width:235px;display:flex;align-items:stretch;flex-direction:column;gap:11px}
+.contact-actions .email{text-align:center;padding:8px;font-weight:650;font-size:12px}
+footer{background:var(--bg)}
+.footer-inner{min-height:100px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:12px;color:var(--sub)}
+.footer-inner div{display:flex;gap:18px}
+@media(max-width:1000px){.nav-cta{display:none}.hero{gap:35px}.container{width:calc(100% - 48px)}}
+@media(max-width:760px){
+ html{scroll-padding-top:113px}
+ .container{width:calc(100% - 34px)}
+ .nav{flex-wrap:wrap;padding:12px 0;gap:11px}
+ .nav-links{width:100%;justify-content:space-between;gap:11px;font-size:12px}
+ .hero{grid-template-columns:1fr;padding:67px 0;gap:37px}
+ .hero-note{max-width:510px}
+ h1{font-size:clamp(42px,9vw,60px)}
+ .intro{font-size:15px}
+ .section{padding:66px 0}.compact-section{padding:57px 0}
+ .two-col{grid-template-columns:1fr;gap:27px}
+ .section-heading{display:block}.section-heading>p{margin-top:15px}
+ .experience-item{grid-template-columns:1fr;gap:6px;padding:23px 0}
+ .skill-grid{grid-template-columns:1fr;gap:0}
+ .featured-grid{grid-template-columns:1fr}
+ .directory-head{margin-top:57px;display:block}
+ .search-wrap{display:block;margin-top:18px}
+ .project-list{grid-template-columns:1fr}
+ .contact-inner{display:block}
+ .contact-actions{margin-top:30px;max-width:400px}
+ .footer-inner{flex-wrap:wrap;gap:10px;padding:25px 0}.footer-inner div{width:100%}
+}
+@media(max-width:420px){h1{font-size:41px}.actions{display:grid}.button{width:100%}.hero-note{padding:25px 20px}.feature-footer{align-items:flex-start;flex-direction:column}.project-row{align-items:flex-start}.project-link,.project-unlinked{margin-top:4px}.project-description{font-size:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button:hover{transform:none}}
+
+
+/* Refinements: a more intentional, warm editorial design */
+:root {
+  --bg:#faf9f5;
+  --surface:#ffffff;
+  --ink:#192b2c;
+  --sub:#526363;
+  --line:#dedfd8;
+  --green:#245a4e;
+  --pale:#eef2ea;
+  --accent:#db795d;
+}
+body{background-image: radial-gradient(circle at 89% 0%, rgba(208,222,203,.32), transparent 31%), linear-gradient(#faf9f5,#faf9f5)}
+.site-header{background:rgba(250,249,245,.95);border-bottom-color:#dce2d9}
+.monogram{background:#245a4e;border-radius:6px;font-family:Georgia,serif;font-size:16px;font-weight:bold}
+.nav-links a,.nav-cta{transition:color .18s ease,background-color .18s ease}
+.nav-cta{border-radius:6px;border-color:#aabbb1}
+.hero{padding-block:103px 95px;gap:66px}
+h1{font-size:clamp(43px,5.5vw,75px);line-height:1.12;letter-spacing:-.058em}
+h1 em{font-style:normal;position:relative;color:#245a4e}
+h1 em::after{content:"";height:5px;width:42%;background:#ddb18a;position:absolute;left:0;bottom:-11px;border-radius:8px}
+.hero-note{border-color:#d5ded3;background:#fffdf9;box-shadow:0 15px 38px rgba(31,63,50,.06);border-radius:10px}
+.note-rule{background:#db795d;height:4px;width:48px}
+.note-footer{letter-spacing:.02em}
+.button{border-radius:7px}
+.button.solid{background:#245a4e;border-color:#245a4e}
+.button.outline{background:#fffdf9}
+.section-marker{color:#8e624b;letter-spacing:.13em}
+.about{background:transparent}
+.facts{border-top:2px solid #d7dfd7}
+.skill-grid h3{letter-spacing:-.015em}
+.skills-section{background:#eff2ed}
+.skill-grid>div{border-top-color:#c7d2c8}
+.featured-grid{gap:18px}
+.featured{border:1px solid #d9ded5;box-shadow:0 6px 22px rgba(27,57,40,.035);border-radius:8px;transition:box-shadow .18s ease,border-color .18s ease,transform .18s ease;position:relative}
+.featured:hover{border-color:#b1c3b6;box-shadow:0 17px 38px rgba(25,56,37,.075);transform:translateY(-2px)}
+.featured:nth-child(1){border-top:3px solid #245a4e}
+.featured:nth-child(2){border-top:3px solid #b87b5c}
+.featured:nth-child(3){border-top:3px solid #8f9e83}
+.featured:nth-child(4){border-top:3px solid #547287}
+.featured-top{margin-bottom:22px}
+.feature-type{color:#73665d}
+.featured h3{font-size:25px;letter-spacing:-.035em}
+.feature-footer a,.project-link{white-space:nowrap}
+.directory-head{margin-top:68px}
+.directory-head h3{letter-spacing:-.035em}
+.project-list{border-top-color:#b7c8b8}
+.project-row{transition:background .16s ease}
+.project-row:hover{background:rgba(224,233,224,.25)}
+.project-name{color:#273c38}
+.search-wrap input{border-color:#b3c5b5;background:#fffdf9}
+.search-wrap input:focus{border-color:#408473}
+.learning-section{background:#eff2ed}
+.contact-section{background:#dde9e1;border-top-color:#c8d9ce}
+.contact-inner h2{font-size:clamp(31px,4vw,48px)}
+.footer-inner{min-height:92px}
+@media(max-width:760px){
+.hero{padding:64px 0;gap:27px}
+.hero-note{padding:24px}
+.featured:hover{transform:none}
+.project-row:hover{background:transparent}
+}
+@media(prefers-reduced-motion:reduce){.featured{transition:none}.project-row{transition:none}}
+
+
+/* Experience sub-role notation */
+.experience-item .subrole{margin-top:11px!important;padding-left:12px;border-left:2px solid #aec9b9;font-size:12px!important;line-height:1.6!important;color:#526961!important}
+.experience-item .subrole strong{font-weight:700;color:#285b4c}
+
+</style>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("project-search");
+  const rows = Array.from(document.querySelectorAll(".project-row"));
+  const groups = Array.from(document.querySelectorAll("[data-group]"));
+  const status = document.getElementById("search-status");
+  if (!input || !status) return;
+  input.addEventListener("input", () => {
+    const query = input.value.toLocaleLowerCase().trim();
+    let visible = 0;
+    for (const row of rows) {
+      const match = !query || (row.dataset.search || "").includes(query);
+      row.hidden = !match;
+      if (match) visible += 1;
+    }
+    for (const group of groups) {
+      const shown = group.querySelectorAll(".project-row:not([hidden])").length;
+      group.hidden = shown === 0;
+      const count = group.querySelector(".count");
+      if (count) count.textContent = String(shown);
+    }
+    status.textContent = query ? visible + " matching project" + (visible === 1 ? "" : "s") : "";
+  });
+});
+
+</script>
 </head>
-
-<body class="is-preload">
-
-<div id="wrapper">
-
-    <!-- Header -->
-    <header id="header">
-        <div class="logo">
-            <span class="icon fa-gem"></span>
-        </div>
-        <div class="content">
-            <div class="inner">
-                <h4>HI! I AM</h4>
-                <h1>Karan Mehra</h1>
-                <p>iOS Developer</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Main -->
-    <div id="main">
-
-        <!-- Intro -->
-        <article id="intro">
-            <h2 class="major">ABOUT ME</h2>
-            <span class="image main"><img src="images/AboutMe.jpg" alt="" /></span>
-            <p>
-            Senior iOS Software Engineer with 4+ years of experience building scalable iOS applications using Swift, SwiftUI, and Objective-C, along with hands-on experience in Flutter. Strong expertise in computer vision (OpenCV) and healthcare applications, including integrations with Apple HealthKit.
-
-            Currently working at WhizCamp, contributing across the full software development lifecycle. Previously collaborated on healthcare and accessibility solutions for Starkey Hearing Technologies (USA).
-
-            Actively exploring Blockchain & Web3.0 and seeking challenging product-based or MNC opportunities to deliver impact and continue professional growth.
-            </p>
-            <p>Checkout some of my <a href="#work">work</a> here.</p>
-        </article>
-
-        <!-- Work -->
-        <article id="work">
-            <h2 class="major">Work</h2>
-            <span class="image main"><img src="images/about.jpeg" alt="" /></span>
-
-            <h3>EXPERIENCE</h3>
-
-            <p>
-                <strong>iOS Developer</strong> at <b>Whizcamp Pvt Ltd</b>, Mohali, India<br/>
-                <i class="fa fa-calendar-alt"> June 2023 – Present</i><br/>
-                • Enhanced app performance by optimizing code and removing bottlenecks.<br/>
-                • Managed full app lifecycle from concept to App Store deployment.
-            </p>
-
-            <p>
-                <strong>iOS Developer</strong> at <b>Zero IT Solutions</b>, Mohali, India<br/>
-                <i class="fa fa-calendar-alt"> January 2021 – May 2023</i><br/>
-                • Responsible for development, design, and deployment of iOS applications.<br/>
-                • Collaborated with teams on maintenance and performance tracking.
-            </p>
-
-            <p>
-                <strong>Senior Technical Team Leader</strong> at <b>British Council</b>, Chandigarh, India<br/>
-                <i class="fa fa-calendar-alt"> January 2021 – March 2022</i>
-            </p>
-
-            <p>
-                <strong>Technical Assistant</strong> at <b>British Council</b>, Chandigarh, India<br/>
-                <i class="fa fa-calendar-alt"> August 2016 – March 2022</i>
-            </p>
-
-            <h3>COMPUTER SKILLS</h3>
-            <ul>
-                <li>Swift, SwiftUI, Objective-C</li>
-                <li>Flutter, Java</li>
-                <li>Core Data, Realm</li>
-                <li>Firebase, OpenCV, Apple HealthKit</li>
-                <li>GitHub, GitLab, Bitbucket</li>
-                <li>Jira, ClickUp, Trello, Slack</li>
-            </ul>
-
-            <h3>PROJECTS</h3>
-            <ul>
-                <li><b>techNbuddy</b> – Swift 5 | <a href="https://apps.apple.com/iq/app/technbuddy/id6744244196" target="_blank">App Store</a></li>
-                <li><b>WedGram</b> – Swift 5 | <a href="https://apps.apple.com/in/app/wedgram/id1615572749" target="_blank">App Store</a></li>
-                <li><b>MasterCook</b> – Objective-C | <a href="https://apps.apple.com/us/app/mastercook/id999514024" target="_blank">App Store</a></li>
-                <li><b>Black Dog Data</b> – Swift 5 | <a href="https://apps.apple.com/in/app/black-dog-data/id6503287098" target="_blank">App Store</a></li>
-                <li><b>MasterCook AI</b> – Flutter | <a href="https://apps.apple.com/in/app/mastercookai/id6749132039" target="_blank">App Store</a></li>
-                <li><b>Kaire AI</b> – Swift 5 | <a href="https://apps.apple.com/us/app/kaireai-smart-care-at-home/id6746397249" target="_blank">App Store</a></li>
-                <li><b>My StarKey – Engage</b> – SwiftUI | <a href="https://apps.apple.com/us/app/my-starkey/id1549559068" target="_blank">App Store</a></li>
-                <li><b>Spinnr – Meet New Friends</b> – Objective-C | <a href="https://apps.apple.com/us/app/spinnr-meet-new-friends/id1637873205" target="_blank">App Store</a></li>
-                <li><b>PeakPotential Golf</b> – Swift + OpenCV | <a href="https://apps.apple.com/us/app/peak-potential-golf/id6477424429" target="_blank">App Store</a></li>
-                <li><b>GIU Team Connect</b> – SwiftUI | <a href="https://apps.apple.com/us/app/giu-team-connect/id6452012682" target="_blank">App Store</a></li>
-                <li><b>WhatsOn</b> – SwiftUI | <a href="https://apps.apple.com/ca/app/whatson-your-night-your-way/id6450044154" target="_blank">App Store</a></li>
-            </ul>
-
-            SEE MY <a href="https://drive.google.com/file/d/15Xq2q6VGPvNdlKjJ4PbuftjYi9gDuvye/view?usp=sharing" target="_blank">RESUME</a> HERE.
-        </article>
-
-        <!-- Education -->
-        <article id="education">
-            <h2 class="major">Education</h2>
-            <span class="image main"><img src="./images/Education-Budget-2019.jpg" alt="" /></span>
-            <ul>
-                <li>
-                    <b>Government Mohindra College</b>, Patiala, Punjab<br/>
-                    <i class="fa fa-calendar-alt"> Aug 2019 – Jun 2021</i><br/>
-                    Master of Science in Information Technology
-                </li>
-                <li>
-                    <b>University College, Mirapur</b>, Patiala, Punjab<br/>
-                    <i class="fa fa-calendar-alt"> Aug 2016 – Jun 2020</i><br/>
-                    Bachelor of Computer Applications
-                </li>
-            </ul>
-        </article>
-
-        <!-- Contact -->
-        <article id="contact">
-            <h2 class="major">Contact</h2>
-            <p>
-                📞 +91 9815829428<br/>
-                📧 mehra.karank@gmail.com
-            </p>
-            <p>Let's Socialize.</p>
-            <ul class="icons">
-                <li><a href="https://twitter.com/mehrakarank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="https://www.linkedin.com/in/mehrakarank/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/WorkWithKaranMehra" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-        </article>
-
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Karan Mehra homepage"><span class="monogram">KM</span><span>Karan Mehra</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+      <a class="nav-cta" href="https://www.linkedin.com/in/mehrakarank/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a>
     </div>
+  </header>
+  <main id="main">
+    <section id="top" class="hero container">
+      <div class="hero-copy">
+        <p class="overline"><span class="status-dot" aria-hidden="true"></span> SENIOR iOS DEVELOPER · MOHALI, INDIA</p>
+        <h1>I build iOS apps,<br><em>from start to finish.</em></h1>
+        <p class="intro">I'm Karan. For 5+ years, I've worked on native iOS applications through my employers, collaborating with clients and engineering teams to plan, build, release and support products. I care about readable code, dependable releases and solving the actual problem.</p>
+        <div class="actions">
+          <a class="button solid" href="#projects">See my work <span aria-hidden="true">↓</span></a>
+          <a class="button outline" href="https://www.linkedin.com/in/mehrakarank/" target="_blank" rel="noopener noreferrer">Say hello on LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="small-social"><a href="https://github.com/WorkWithKaranMehra" target="_blank" rel="noopener noreferrer">GitHub ↗</a> <span aria-hidden="true">·</span> <a href="mailto:mehra.karank@gmail.com">Email ↗</a> <span aria-hidden="true">·</span> <a href="https://wa.me/919815829428" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></p>
+      </div>
+      <aside class="hero-note" aria-label="What I focus on">
+        <div class="note-rule"></div>
+        <span class="note-label">MY DAY-TO-DAY</span>
+        <p><strong>Client conversations.</strong><br>Understanding the requirement before writing code.</p>
+        <p><strong>Engineering &amp; review.</strong><br>Architecture, integrations, clean commits and debugging.</p>
+        <p><strong>Shipping &amp; support.</strong><br>Signing, certificates, App Store releases and post-launch fixes.</p>
+        <div class="note-footer">Swift · SwiftUI · UIKit · Objective-C</div>
+      </aside>
+    </section>
+    <section class="section about" id="about">
+      <div class="container two-col">
+        <div><p class="section-marker">01 / ABOUT</p><h2>Engineer first.<br>Product-minded always.</h2></div>
+        <div class="prose">
+          <p>In my company roles, I take ownership of assigned projects from the first requirement discussion through production delivery. That includes speaking with clients on behalf of my team, planning implementation, reviewing code and supporting applications after release.</p>
+          <p>I've worked across healthcare, hearing-device products, social apps, services and connected hardware. Recent technical work includes a custom rPPG face-scan implementation, integrating open-source ML models, BLE connectivity and Apple HealthKit.</p>
+          <div class="facts"><span><strong>5+ years</strong> iOS experience</span><span><strong>20+ projects</strong> across domains</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section compact-section" id="experience">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-marker">02 / EXPERIENCE</p><h2>Professional experience</h2></div><p>My employment history and the responsibilities I've handled in each role.</p></div>
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="date">June 2023 — Present</div>
+            <div>
+              <h3>Senior iOS Developer</h3>
+              <p class="company">Whizcamp Pvt Ltd · Mohali, India</p>
+              <p>Lead iOS projects within the company, from client requirement discussions and technical planning to development, code review, testing, App Store release and ongoing support. Manage App Store Connect submissions, certificates, signing and push notifications; address feedback and maintain existing applications.</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">January 2021 — May 2023</div>
+            <div>
+              <h3>iOS Developer</h3>
+              <p class="company">Zero IT Solutions · Mohali, India</p>
+              <p>Developed and maintained iOS applications using Swift, Objective-C and UIKit. Worked with REST APIs, Firebase, third-party integrations, UI components, debugging and production issues on company-assigned projects.</p>
+              <p class="subrole"><strong>Earlier role:</strong> iOS Trainee · September 2020 — December 2020</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">August 2016 — March 2022</div>
+            <div>
+              <h3>Technical Assistant / Senior Technical Team Leader</h3>
+              <p class="company">British Council · Chandigarh, India · Part-time / Freelance</p>
+              <p>Supported technical operations, equipment setup, testing and troubleshooting. Coordinated on-site work and led a team of technicians for reliable delivery of examination-related technical activities.</p>
+              <p class="subrole"><strong>Leadership role:</strong> Senior Technical Team Leader · June 2021 — March 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section compact-section skills-section" id="skills">
+      <div class="container"><div class="section-heading"><div><p class="section-marker">03 / SKILLS</p><h2>Tools I work with</h2></div></div>
+        <div class="skill-grid">
+          <div><h3>iOS development</h3><p>Swift 5, UIKit, SwiftUI, Objective-C, Auto Layout, Core Data, Realm, Combine, MVVM, MVC</p></div>
+          <div><h3>Integrations</h3><p>REST APIs, Firebase, BLE, Apple HealthKit, OpenCV, push notifications, third-party SDKs</p></div>
+          <div><h3>Delivery &amp; quality</h3><p>Git, code review, refactoring, debugging, App Store Connect, provisioning and certificates</p></div>
+          <div><h3>Additional tools</h3><p>Claude, ChatGPT and AI coding agents (with manual review); basic Dart/Flutter UI and authentication</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading projects-heading"><div><p class="section-marker">04 / PROJECTS</p><h2>Selected work</h2></div><p>A selection of projects I worked on while employed at Whizcamp or Zero IT Solutions. These are company-delivered projects, not independent client contracts.</p></div>
+        <div class="featured-grid">
+          <article class="featured"><div class="featured-top"><span class="feature-type">HEALTHCARE · iOS</span><span class="feature-number">01</span></div><h3>KaireAI</h3><p>Started the app from scratch and worked across its modules: custom rPPG face scanning, check-ins, health/vitals features, BLE hardware connectivity and integration of ML models informed by open-source data. Binah.ai was an R&amp;D reference, not an integrated SDK.</p><div class="feature-footer"><span>Swift · rPPG · BLE · ML</span><a href="https://apps.apple.com/us/app/kaireai-smart-care-at-home/id6746397249" target="_blank" rel="noopener noreferrer">App Store ↗</a></div></article>
+          <article class="featured"><div class="featured-top"><span class="feature-type">HEARING TECHNOLOGY · COMPANY PROJECT</span><span class="feature-number">02</span></div><h3>Starkey apps</h3><p>Worked on hearing-care companion applications, including My Starkey / Engage and Thrive Care (now Hear Share), through my employer. The work involved device-status features and mobile integrations.</p><div class="feature-footer"><span>Swift · SwiftUI · Firebase</span><a href="https://apps.apple.com/us/app/my-starkey/id1549559068" target="_blank" rel="noopener noreferrer">My Starkey ↗</a></div></article>
+          <article class="featured"><div class="featured-top"><span class="feature-type">DIVING TECHNOLOGY · COMPANY PROJECT</span><span class="feature-number">03</span></div><h3>DIVERoid 2.0</h3><p>Worked on DIVERoid 2.0 as a company-assigned iOS project. The specific feature work is not detailed here because it has not yet been documented in my portfolio.</p><div class="feature-footer"><span>iOS · Company project</span><a href="https://apps.apple.com/us/app/diveroid-2-0/id1501474558" target="_blank" rel="noopener noreferrer">App Store ↗</a></div></article>
+          <article class="featured"><div class="featured-top"><span class="feature-type">SOCIAL · iOS</span><span class="feature-number">04</span></div><h3>Spinnr</h3><p>Worked on an Objective-C social networking app built around video profiles and meeting people with shared interests. The project used Firebase, push notifications and a Spotify integration.</p><div class="feature-footer"><span>Objective-C · Firebase · Spotify</span><a href="https://apps.apple.com/hu/app/spinnr-meet-new-friends/id1637873205?platform=iphone" target="_blank" rel="noopener noreferrer">App Store ↗</a></div></article>
+        </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <p class="copyright">&copy; 2025 Karan Mehra</p>
-    </footer>
-
-</div>
-
-<div id="bg"></div>
-
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
+        <div class="directory-head">
+          <div><h3>Project directory</h3><p>More applications I've worked on through my employers. App Store visibility depends on the country and current listing status.</p></div>
+          <label class="search-wrap"><span class="sr-only">Find a project</span><input id="project-search" type="search" placeholder="Find a project..." autocomplete="off" aria-controls="public-projects private-projects"></label>
+        </div>
+        <div class="project-groups" id="project-groups">
+          <section class="project-group" data-group><h4>Apps with public links <span class="count">26</span></h4><ul class="project-list" id="public-projects"><li class="project-row" data-search="kaireai — smart care at home swift · rppg · ble · ml integration digital health, facial scanning, vitals and connected devices.">
+  <div class="project-info"><span class="project-name">KaireAI — Smart Care at Home</span><span class="project-description">Digital health, facial scanning, vitals and connected devices. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · rPPG · BLE · ML integration</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/kaireai-smart-care-at-home/id6746397249" target="_blank" rel="noopener noreferrer" aria-label="View KaireAI — Smart Care at Home on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="my starkey swiftui · rxswift · firebase hearing-device companion app; client project.">
+  <div class="project-info"><span class="project-name">My Starkey</span><span class="project-description">Hearing-device companion app; company project. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">SwiftUI · RxSwift · Firebase</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/my-starkey/id1549559068" target="_blank" rel="noopener noreferrer" aria-label="View My Starkey on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="hear share (formerly thrive care) swift · firebase · brightcove hearing-care companion experience; client project.">
+  <div class="project-info"><span class="project-name">Hear Share (formerly Thrive Care)</span><span class="project-description">Hearing-care companion experience; company project. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Brightcove</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/hear-share/id1483221109" target="_blank" rel="noopener noreferrer" aria-label="View Hear Share (formerly Thrive Care) on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="diveroid 2.0 ios · client project contributed to the diveroid ios product.">
+  <div class="project-info"><span class="project-name">DIVERoid 2.0</span><span class="project-description">Contributed to the DIVERoid iOS product. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">iOS · Client project</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/diveroid-2-0/id1501474558" target="_blank" rel="noopener noreferrer" aria-label="View DIVERoid 2.0 on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="spinnr — meet new friends objective-c · firebase · spotify video-first social networking experience.">
+  <div class="project-info"><span class="project-name">Spinnr — Meet New Friends</span><span class="project-description">Video-first social networking experience. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Objective-C · Firebase · Spotify</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/hu/app/spinnr-meet-new-friends/id1637873205?platform=iphone" target="_blank" rel="noopener noreferrer" aria-label="View Spinnr — Meet New Friends on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="technbuddy swift 5 business networking application.">
+  <div class="project-info"><span class="project-name">techNbuddy</span><span class="project-description">Business networking application. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift 5</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/in/app/technbuddy-business-network/id6744244196" target="_blank" rel="noopener noreferrer" aria-label="View techNbuddy on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="peak potential golf swift · opencv golf-focused ios application.">
+  <div class="project-info"><span class="project-name">Peak Potential Golf</span><span class="project-description">Golf-focused iOS application. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · OpenCV</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/peak-potential-golf/id6477424429" target="_blank" rel="noopener noreferrer" aria-label="View Peak Potential Golf on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="whatson swiftui events and nightlife app.">
+  <div class="project-info"><span class="project-name">WhatsOn</span><span class="project-description">Events and nightlife app. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">SwiftUI</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/ca/app/whatson-your-night-your-way/id6450044154" target="_blank" rel="noopener noreferrer" aria-label="View WhatsOn on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="vric swift · stripe · sdwebimage community and nonprofit information app.">
+  <div class="project-info"><span class="project-name">VRIC</span><span class="project-description">Community and nonprofit information app. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Stripe · SDWebImage</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/in/app/vric/id1017115831" target="_blank" rel="noopener noreferrer" aria-label="View VRIC on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="afghanx swift · firebase · brightcove social feeds, videos and messaging.">
+  <div class="project-info"><span class="project-name">AfghanX</span><span class="project-description">Social feeds, videos and messaging. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Brightcove</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/pk/app/afghanx/id6444164701" target="_blank" rel="noopener noreferrer" aria-label="View AfghanX on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="only frieends swift · firebase messaging social discovery and video features.">
+  <div class="project-info"><span class="project-name">Only Frieends</span><span class="project-description">Social discovery and video features. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase Messaging</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/iq/app/onlyfrieends/id1574871344" target="_blank" rel="noopener noreferrer" aria-label="View Only Frieends on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="pronow swift · firebase · google maps service marketplace with location-based safety feature.">
+  <div class="project-info"><span class="project-name">Pronow</span><span class="project-description">Service marketplace with location-based safety feature. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Google Maps</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/pronow/id1492377455" target="_blank" rel="noopener noreferrer" aria-label="View Pronow on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="keykey  ios product contribution.">
+  <div class="project-info"><span class="project-name">KeyKey</span><span class="project-description">iOS product contribution.</span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/keykey/id1645500308" target="_blank" rel="noopener noreferrer" aria-label="View KeyKey on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="innerland  ios product contribution.">
+  <div class="project-info"><span class="project-name">Innerland</span><span class="project-description">iOS product contribution.</span></div>
+  <a class="project-link" href="https://apps.apple.com/in/app/innerland/id6450691727" target="_blank" rel="noopener noreferrer" aria-label="View Innerland on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="afritia merchant  merchant-side application.">
+  <div class="project-info"><span class="project-name">Afritia Merchant</span><span class="project-description">Merchant-side application.</span></div>
+  <a class="project-link" href="https://apps.apple.com/ch/app/afritia-merchant/id1544650724?platform=iphone" target="_blank" rel="noopener noreferrer" aria-label="View Afritia Merchant on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="kingpool  ios product contribution.">
+  <div class="project-info"><span class="project-name">Kingpool</span><span class="project-description">iOS product contribution.</span></div>
+  <a class="project-link" href="https://apps.apple.com/pl/app/kingpool/id6448845678" target="_blank" rel="noopener noreferrer" aria-label="View Kingpool on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="mastercook objective-c ios app work in objective-c.">
+  <div class="project-info"><span class="project-name">MasterCook</span><span class="project-description">iOS app work in Objective-C. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Objective-C</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/mastercook/id999514024" target="_blank" rel="noopener noreferrer" aria-label="View MasterCook on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="wedgram swift ios product contribution.">
+  <div class="project-info"><span class="project-name">Wedgram</span><span class="project-description">iOS product contribution. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/in/app/wedgram/id1615572749" target="_blank" rel="noopener noreferrer" aria-label="View Wedgram on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="giu team connect swiftui team collaboration app.">
+  <div class="project-info"><span class="project-name">GIU Team Connect</span><span class="project-description">Team collaboration app. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">SwiftUI</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/giu-team-connect/id6452012682" target="_blank" rel="noopener noreferrer" aria-label="View GIU Team Connect on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="kitchenpocket  ios product contribution.">
+  <div class="project-info"><span class="project-name">KitchenPocket</span><span class="project-description">iOS product contribution.</span></div>
+  <a class="project-link" href="https://apps.apple.com/in/app/kitchenpocket/id6754674431" target="_blank" rel="noopener noreferrer" aria-label="View KitchenPocket on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="black dog data swift 5 ios product contribution.">
+  <div class="project-info"><span class="project-name">Black Dog Data</span><span class="project-description">iOS product contribution. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift 5</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/black-dog-data/id6503287098" target="_blank" rel="noopener noreferrer" aria-label="View Black Dog Data on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="ampere tech  ios product contribution.">
+  <div class="project-info"><span class="project-name">Ampere Tech</span><span class="project-description">iOS product contribution.</span></div>
+  <a class="project-link" href="https://apps.apple.com/au/app/ampere-tech/id1606105956" target="_blank" rel="noopener noreferrer" aria-label="View Ampere Tech on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="marriage rubru  ios product contribution.">
+  <div class="project-info"><span class="project-name">Marriage Rubru</span><span class="project-description">iOS product contribution.</span></div>
+  <a class="project-link" href="https://apps.apple.com/us/app/marriage-rubru/id6636476747" target="_blank" rel="noopener noreferrer" aria-label="View Marriage Rubru on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="tsg evident  ios product contribution.">
+  <div class="project-info"><span class="project-name">TSG Evident</span><span class="project-description">iOS product contribution.</span></div>
+  <a class="project-link" href="https://apps.apple.com/gb/app/tsg-evident/id1473017194" target="_blank" rel="noopener noreferrer" aria-label="View TSG Evident on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="ballerspot swift 5 · firebase · push notifications football prediction app.">
+  <div class="project-info"><span class="project-name">BallerSpot</span><span class="project-description">Football prediction app. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift 5 · Firebase · Push notifications</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/in/app/ballerspot/id1395325975" target="_blank" rel="noopener noreferrer" aria-label="View BallerSpot on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li>
+<li class="project-row" data-search="mastercook ai flutter (limited exposure) cross-platform project exposure.">
+  <div class="project-info"><span class="project-name">MasterCook AI</span><span class="project-description">Cross-platform project exposure. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Flutter (limited exposure)</span></span></div>
+  <a class="project-link" href="https://apps.apple.com/in/app/mastercookai/id6749132039" target="_blank" rel="noopener noreferrer" aria-label="View MasterCook AI on the App Store">App Store <span aria-hidden="true">↗</span></a>
+</li></ul></section>
+          <section class="project-group" data-group><h4>Additional project work <span class="count">10</span></h4><ul class="project-list" id="private-projects"><li class="project-row" data-search="gena healthx swift · firebase · socket.io · razorpay healthcare application and integrations.">
+  <div class="project-info"><span class="project-name">Gena HealthX</span><span class="project-description">Healthcare application and integrations. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Socket.IO · Razorpay</span></span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="trad swift · firebase · google maps real estate listings and property marketplace.">
+  <div class="project-info"><span class="project-name">TRAD</span><span class="project-description">Real estate listings and property marketplace. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Google Maps</span></span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="carnival raffle swift · firebase · crashlytics competition and raffle application.">
+  <div class="project-info"><span class="project-name">Carnival Raffle</span><span class="project-description">Competition and raffle application. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Crashlytics</span></span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="the american pizza swift · firebase · google maps food order management.">
+  <div class="project-info"><span class="project-name">The American Pizza</span><span class="project-description">Food order management. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Google Maps</span></span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="afritia  additional client project.">
+  <div class="project-info"><span class="project-name">Afritia</span><span class="project-description">Additional client project.</span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="arabat  additional client project.">
+  <div class="project-info"><span class="project-name">Arabat</span><span class="project-description">Additional client project.</span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="epic eats  additional client project.">
+  <div class="project-info"><span class="project-name">Epic Eats</span><span class="project-description">Additional client project.</span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="boatbuy  additional client project.">
+  <div class="project-info"><span class="project-name">Boatbuy</span><span class="project-description">Additional client project.</span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="pollvote user  additional client project.">
+  <div class="project-info"><span class="project-name">Pollvote User</span><span class="project-description">Additional client project.</span></div>
+  <span class="project-unlinked">No public link</span>
+</li>
+<li class="project-row" data-search="pollvote organiser  additional client project.">
+  <div class="project-info"><span class="project-name">Pollvote Organiser</span><span class="project-description">Additional client project.</span></div>
+  <span class="project-unlinked">No public link</span>
+</li></ul></section>
+        </div>
+        <p id="search-status" class="search-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+    <section class="section learning-section"><div class="container two-col">
+      <div><p class="section-marker">05 / EDUCATION</p><h2>Background</h2></div>
+      <div class="education-items"><p><strong>M.Sc. Information Technology</strong><br>Government Mohindra College, Patiala · 2019–2021</p><p><strong>Bachelor of Computer Applications</strong><br>2016–2019</p><p><strong>Additional learning:</strong> Claude Code in Action and Claude 101 (Anthropic)</p></div>
+    </div></section>
+    <section class="section contact-section" id="contact"><div class="container contact-inner">
+      <div><p class="section-marker">06 / CONTACT</p><h2>Have a role or an<br>interesting problem?</h2><p>I'm open to discussing Senior iOS Developer opportunities and technically challenging work. LinkedIn is easiest for recruiters; WhatsApp is there for direct conversations.</p></div>
+      <div class="contact-actions">
+        <a class="button solid" href="https://www.linkedin.com/in/mehrakarank/" target="_blank" rel="noopener noreferrer">Say hello on LinkedIn ↗</a>
+        <a class="button outline" href="https://wa.me/919815829428" target="_blank" rel="noopener noreferrer">Message on WhatsApp ↗</a>
+        <a class="email" href="mailto:mehra.karank@gmail.com">mehra.karank@gmail.com ↗</a>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© 2026 Karan Mehra</span><span>Senior iOS Developer · Built with care.</span><div><a href="https://github.com/WorkWithKaranMehra" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/mehrakarank/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></footer>
 </body>
 </html>

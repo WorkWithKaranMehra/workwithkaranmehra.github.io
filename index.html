@@ -202,6 +202,11 @@ h1 em::after{content:"";height:5px;width:42%;background:#ddb18a;position:absolut
 }
 @media(prefers-reduced-motion:reduce){.featured{transition:none}.project-row{transition:none}}
 
+
+/* Experience sub-role notation */
+.experience-item .subrole{margin-top:11px!important;padding-left:12px;border-left:2px solid #aec9b9;font-size:12px!important;line-height:1.6!important;color:#526961!important}
+.experience-item .subrole strong{font-weight:700;color:#285b4c}
+
 </style>
   <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -246,7 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="hero-copy">
         <p class="overline"><span class="status-dot" aria-hidden="true"></span> SENIOR iOS DEVELOPER · MOHALI, INDIA</p>
         <h1>I build iOS apps,<br><em>from start to finish.</em></h1>
-        <p class="intro">I'm Karan. For 5+ years, I've worked with clients and engineering teams to plan, build, release and support native iOS applications. I care about readable code, dependable releases and solving the actual problem.</p>
+        <p class="intro">I'm Karan. For 5+ years, I've worked on native iOS applications through my employers, collaborating with clients and engineering teams to plan, build, release and support products. I care about readable code, dependable releases and solving the actual problem.</p>
         <div class="actions">
           <a class="button solid" href="#projects">See my work <span aria-hidden="true">↓</span></a>
           <a class="button outline" href="https://www.linkedin.com/in/mehrakarank/" target="_blank" rel="noopener noreferrer">Say hello on LinkedIn <span aria-hidden="true">↗</span></a>
@@ -266,7 +271,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="container two-col">
         <div><p class="section-marker">01 / ABOUT</p><h2>Engineer first.<br>Product-minded always.</h2></div>
         <div class="prose">
-          <p>I lead projects from the first requirement discussion through production delivery. That includes working with clients directly, planning the implementation, reviewing code and taking care of what happens after an app is released.</p>
+          <p>In my company roles, I take ownership of assigned projects from the first requirement discussion through production delivery. That includes speaking with clients on behalf of my team, planning implementation, reviewing code and supporting applications after release.</p>
           <p>I've worked across healthcare, hearing-device products, social apps, services and connected hardware. Recent technical work includes a custom rPPG face-scan implementation, integrating open-source ML models, BLE connectivity and Apple HealthKit.</p>
           <div class="facts"><span><strong>5+ years</strong> iOS experience</span><span><strong>20+ projects</strong> across domains</span></div>
         </div>
@@ -274,11 +279,34 @@ document.addEventListener("DOMContentLoaded", () => {
     </section>
     <section class="section compact-section" id="experience">
       <div class="container">
-        <div class="section-heading"><div><p class="section-marker">02 / EXPERIENCE</p><h2>Where I've worked</h2></div><p>Direct product ownership, technical work, and long-term maintenance.</p></div>
+        <div class="section-heading"><div><p class="section-marker">02 / EXPERIENCE</p><h2>Professional experience</h2></div><p>My employment history and the responsibilities I've handled in each role.</p></div>
         <div class="experience-list">
-          <div class="experience-item"><div class="date">2023 — Present</div><div><h3>Senior iOS Developer</h3><p class="company">Whizcamp Pvt Ltd</p><p>Lead app development and releases, take client calls, turn feedback into changes, review code and maintain ongoing apps. Handle App Store Connect, push notifications, signing and certificates.</p></div></div>
-          <div class="experience-item"><div class="date">2020 — 2023</div><div><h3>iOS Developer / iOS Trainee</h3><p class="company">Zero IT Solutions</p><p>Worked on Swift and Objective-C applications, UIKit interfaces, Firebase, APIs and third-party integrations.</p></div></div>
-          <div class="experience-item"><div class="date">Client products</div><div><h3>Starkey &amp; DIVERoid</h3><p class="company">Project / contractor contributions</p><p>Contributed to products associated with Starkey Hearing Technologies and DIVERoid. These are client engagements, not direct employment positions.</p></div></div>
+          <div class="experience-item">
+            <div class="date">June 2023 — Present</div>
+            <div>
+              <h3>Senior iOS Developer</h3>
+              <p class="company">Whizcamp Pvt Ltd · Mohali, India</p>
+              <p>Lead iOS projects within the company, from client requirement discussions and technical planning to development, code review, testing, App Store release and ongoing support. Manage App Store Connect submissions, certificates, signing and push notifications; address feedback and maintain existing applications.</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">January 2021 — May 2023</div>
+            <div>
+              <h3>iOS Developer</h3>
+              <p class="company">Zero IT Solutions · Mohali, India</p>
+              <p>Developed and maintained iOS applications using Swift, Objective-C and UIKit. Worked with REST APIs, Firebase, third-party integrations, UI components, debugging and production issues on company-assigned projects.</p>
+              <p class="subrole"><strong>Earlier role:</strong> iOS Trainee · September 2020 — December 2020</p>
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="date">August 2016 — March 2022</div>
+            <div>
+              <h3>Technical Assistant / Senior Technical Team Leader</h3>
+              <p class="company">British Council · Chandigarh, India · Part-time / Freelance</p>
+              <p>Supported technical operations, equipment setup, testing and troubleshooting. Coordinated on-site work and led a team of technicians for reliable delivery of examination-related technical activities.</p>
+              <p class="subrole"><strong>Leadership role:</strong> Senior Technical Team Leader · June 2021 — March 2022</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -294,16 +322,16 @@ document.addEventListener("DOMContentLoaded", () => {
     </section>
     <section class="section" id="projects">
       <div class="container">
-        <div class="section-heading projects-heading"><div><p class="section-marker">04 / PROJECTS</p><h2>Selected work</h2></div><p>Some of the products I've built or contributed to. My role varies by project; I've kept the descriptions grounded in work I can explain.</p></div>
+        <div class="section-heading projects-heading"><div><p class="section-marker">04 / PROJECTS</p><h2>Selected work</h2></div><p>A selection of projects I worked on while employed at Whizcamp or Zero IT Solutions. These are company-delivered projects, not independent client contracts.</p></div>
         <div class="featured-grid">
           <article class="featured"><div class="featured-top"><span class="feature-type">HEALTHCARE · iOS</span><span class="feature-number">01</span></div><h3>KaireAI</h3><p>Started the app from scratch and worked across its modules: custom rPPG face scanning, check-ins, health/vitals features, BLE hardware connectivity and integration of ML models informed by open-source data. Binah.ai was an R&amp;D reference, not an integrated SDK.</p><div class="feature-footer"><span>Swift · rPPG · BLE · ML</span><a href="https://apps.apple.com/us/app/kaireai-smart-care-at-home/id6746397249" target="_blank" rel="noopener noreferrer">App Store ↗</a></div></article>
-          <article class="featured"><div class="featured-top"><span class="feature-type">HEARING TECHNOLOGY · CONTRACT WORK</span><span class="feature-number">02</span></div><h3>Starkey apps</h3><p>Contributed to hearing-care companion applications, including My Starkey / Engage and Thrive Care (now Hear Share). Work involved device-status features and mobile integrations used in healthcare-focused apps.</p><div class="feature-footer"><span>Swift · SwiftUI · Firebase</span><a href="https://apps.apple.com/us/app/my-starkey/id1549559068" target="_blank" rel="noopener noreferrer">My Starkey ↗</a></div></article>
-          <article class="featured"><div class="featured-top"><span class="feature-type">DIVING TECHNOLOGY · CLIENT WORK</span><span class="feature-number">03</span></div><h3>DIVERoid 2.0</h3><p>Contributed to the DIVERoid iOS product through client project work. I can discuss the specific engineering scope and challenges directly, rather than making unsupported claims about individual features.</p><div class="feature-footer"><span>iOS · Client contribution</span><a href="https://apps.apple.com/us/app/diveroid-2-0/id1501474558" target="_blank" rel="noopener noreferrer">App Store ↗</a></div></article>
+          <article class="featured"><div class="featured-top"><span class="feature-type">HEARING TECHNOLOGY · COMPANY PROJECT</span><span class="feature-number">02</span></div><h3>Starkey apps</h3><p>Worked on hearing-care companion applications, including My Starkey / Engage and Thrive Care (now Hear Share), through my employer. The work involved device-status features and mobile integrations.</p><div class="feature-footer"><span>Swift · SwiftUI · Firebase</span><a href="https://apps.apple.com/us/app/my-starkey/id1549559068" target="_blank" rel="noopener noreferrer">My Starkey ↗</a></div></article>
+          <article class="featured"><div class="featured-top"><span class="feature-type">DIVING TECHNOLOGY · COMPANY PROJECT</span><span class="feature-number">03</span></div><h3>DIVERoid 2.0</h3><p>Worked on DIVERoid 2.0 as a company-assigned iOS project. The specific feature work is not detailed here because it has not yet been documented in my portfolio.</p><div class="feature-footer"><span>iOS · Company project</span><a href="https://apps.apple.com/us/app/diveroid-2-0/id1501474558" target="_blank" rel="noopener noreferrer">App Store ↗</a></div></article>
           <article class="featured"><div class="featured-top"><span class="feature-type">SOCIAL · iOS</span><span class="feature-number">04</span></div><h3>Spinnr</h3><p>Worked on an Objective-C social networking app built around video profiles and meeting people with shared interests. The project used Firebase, push notifications and a Spotify integration.</p><div class="feature-footer"><span>Objective-C · Firebase · Spotify</span><a href="https://apps.apple.com/hu/app/spinnr-meet-new-friends/id1637873205?platform=iphone" target="_blank" rel="noopener noreferrer">App Store ↗</a></div></article>
         </div>
 
         <div class="directory-head">
-          <div><h3>Project directory</h3><p>A fuller list of applications I've made or worked on. App Store visibility depends on the country and current listing status.</p></div>
+          <div><h3>Project directory</h3><p>More applications I've worked on through my employers. App Store visibility depends on the country and current listing status.</p></div>
           <label class="search-wrap"><span class="sr-only">Find a project</span><input id="project-search" type="search" placeholder="Find a project..." autocomplete="off" aria-controls="public-projects private-projects"></label>
         </div>
         <div class="project-groups" id="project-groups">
@@ -312,11 +340,11 @@ document.addEventListener("DOMContentLoaded", () => {
   <a class="project-link" href="https://apps.apple.com/us/app/kaireai-smart-care-at-home/id6746397249" target="_blank" rel="noopener noreferrer" aria-label="View KaireAI — Smart Care at Home on the App Store">App Store <span aria-hidden="true">↗</span></a>
 </li>
 <li class="project-row" data-search="my starkey swiftui · rxswift · firebase hearing-device companion app; client project.">
-  <div class="project-info"><span class="project-name">My Starkey</span><span class="project-description">Hearing-device companion app; client project. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">SwiftUI · RxSwift · Firebase</span></span></div>
+  <div class="project-info"><span class="project-name">My Starkey</span><span class="project-description">Hearing-device companion app; company project. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">SwiftUI · RxSwift · Firebase</span></span></div>
   <a class="project-link" href="https://apps.apple.com/us/app/my-starkey/id1549559068" target="_blank" rel="noopener noreferrer" aria-label="View My Starkey on the App Store">App Store <span aria-hidden="true">↗</span></a>
 </li>
 <li class="project-row" data-search="hear share (formerly thrive care) swift · firebase · brightcove hearing-care companion experience; client project.">
-  <div class="project-info"><span class="project-name">Hear Share (formerly Thrive Care)</span><span class="project-description">Hearing-care companion experience; client project. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Brightcove</span></span></div>
+  <div class="project-info"><span class="project-name">Hear Share (formerly Thrive Care)</span><span class="project-description">Hearing-care companion experience; company project. <span class="dot-separator" aria-hidden="true">·</span> <span class="project-tech">Swift · Firebase · Brightcove</span></span></div>
   <a class="project-link" href="https://apps.apple.com/us/app/hear-share/id1483221109" target="_blank" rel="noopener noreferrer" aria-label="View Hear Share (formerly Thrive Care) on the App Store">App Store <span aria-hidden="true">↗</span></a>
 </li>
 <li class="project-row" data-search="diveroid 2.0 ios · client project contributed to the diveroid ios product.">
